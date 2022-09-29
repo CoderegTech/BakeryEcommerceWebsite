@@ -1,13 +1,78 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Damion&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Damion&family=Josefin+Sans:wght@100;200;300&display=swap");
+
+.about-img {
+  width: min(50rem, 400px);
+  position: relative;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.about-img::before {
+  content: "";
+  position: absolute;
+  left: -100px;
+  top: 0;
+  width: 300px;
+  height: 300px;
+  background: #000;
+  /* border: 3px solid hsl(0, 36%, 29%); */
+}
+
+.navlist {
+  font-family: "Josefin Sans", sans-serif;
+  color: #fff;
+  font-weight: 800;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 0.2rem 0.5rem;
+  white-space: nowrap;
+  /* border-radius: 50px; */
+}
+
+.navlist:hover {
+  background-color: hsl(0, 38%, 21%);
+}
+
+.toggle-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.toggle-menu span {
+  width: 30px;
+  height: 3px;
+  background-color: hsl(0, 36%, 29%);
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 1024px) {
+  .toggle-menu span {
+    background-color: hsl(0, 0%, 100%);
+  }
+}
+
+.toggle-menu.active span {
+  background-color: #fff;
+}
+
+.toggle-menu.active span:first-child {
+  transform: rotate(40deg) translate(4px, 8px);
+}
+
+.toggle-menu.active span:nth-child(2) {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.toggle-menu.active span:last-child {
+  transform: rotate(-40deg) translate(4px, -8px);
+}
+
+.sideNav ul {
+  position: absolute;
+  width: 100%;
 }
