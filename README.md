@@ -1,3 +1,9 @@
+# bakery-ecommerce-website
+![Screenshot from 2022-10-23 21-17-45](https://user-images.githubusercontent.com/98440814/197394569-b4b90c5a-ec61-4169-a723-c03bacbc37a3.png)
+![Screenshot from 2022-10-23 21-17-55](https://user-images.githubusercontent.com/98440814/197394573-2d31d5ae-d890-478e-9299-8c373c025100.png)
+![Screenshot from 2022-10-23 21-18-34](https://user-images.githubusercontent.com/98440814/197394576-debd625a-39b7-4a37-a07f-33feebff1a93.png)
+![Screenshot from 2022-10-23 21-18-46](https://user-images.githubusercontent.com/98440814/197394578-3d523cac-46d5-49a5-aa03-ea0488f42631.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,4 +74,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# bakery-ecommerce-website
+
