@@ -4,11 +4,11 @@ import { GrCart } from "react-icons/gr";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { Link } from "react-router-dom";
 
-import { shoplist } from "./Shoplist";
 import DropdownMenu from "../Utilities/DropdownMenu";
+import Footer from "../Utilities/Footer";
 import Navbar from "../Utilities/Navbar";
 import Pagination from "../Utilities/Pagination";
-import Footer from "../Utilities/Footer";
+import { shoplist } from "./Shoplist";
 
 function Shop() {
   const [items, setItems] = useState(shoplist);
@@ -59,7 +59,7 @@ function Shop() {
           {items.map(({ id, imgUrl, breadName, description, price }) => (
             <li
               key={id}
-              className=" flex flex-col max-w-80 w-80 md:h-full shadow-xl  rounded-xl overflow-hidden "
+              className=" flex flex-col max-w-80 w-80 md:h-full shadow-xl shadow-[rgba(0,0,0,0.5)] rounded-xl overflow-hidden "
             >
               <img
                 className="w-full bg-white h-56 object-cover hover:scale-110 duration-500"
