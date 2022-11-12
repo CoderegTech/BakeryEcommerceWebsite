@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/bakery-ecommerce-website/static/css/main.7bcda5d1.css",
+    "main.js": "/bakery-ecommerce-website/static/js/main.44a1ca9c.js",
+    "static/media/shopWall.jpg": "/bakery-ecommerce-website/static/media/shopWall.88feb371476daf0e6d92.jpg",
+    "static/media/wall.jpg": "/bakery-ecommerce-website/static/media/wall.df64c916eab8c59e8085.jpg",
+    "index.html": "/bakery-ecommerce-website/index.html",
+    "main.7bcda5d1.css.map": "/bakery-ecommerce-website/static/css/main.7bcda5d1.css.map",
+    "main.44a1ca9c.js.map": "/bakery-ecommerce-website/static/js/main.44a1ca9c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7bcda5d1.css",
+    "static/js/main.44a1ca9c.js"
+  ]
+}
