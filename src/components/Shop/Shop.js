@@ -55,19 +55,22 @@ function Shop() {
       <Navbar />
 
       <div className="bg-shopwall w-full h-full relative">
-        <ul className="w-full flex flex-wrap justify-center gap-4 pt-16">
+        <ul className="max-w-6xl mx-auto w-full flex flex-wrap justify-center gap-4 pt-16">
           {items.map(({ id, imgUrl, breadName, description, price }) => (
             <li
               key={id}
-              className=" flex flex-col max-w-80 w-80 md:h-full shadow-xl shadow-[rgba(0,0,0,0.5)] rounded-xl overflow-hidden "
+              className=" flex flex-col max-w-[280px] max-h-[300px] h-full shadow-xl shadow-[rgba(0,0,0,0.5)] rounded-xl overflow-hidden "
             >
-              <img
-                className="w-full bg-white h-56 object-cover hover:scale-110 duration-500"
-                src={imgUrl}
-              />
-              <div className="relative bg-white flex-1 text-black p-3 space-y-2">
-                <h3 className="text-lg sm:text-xl">{breadName}</h3>
-                <p className="text-md sm:text-lg ">
+              <div className="w-full max-h-40 h-full">
+                <img
+                  className="w-full bg-white h-full object-cover hover:scale-110 duration-500"
+                  src={imgUrl}
+                />
+              </div>
+
+              <div className="relative w-full max-h-[150px] bg-white flex-1 text-black p-3 space-y-2">
+                <h3 className="text-lg md:text-xl font-bold">{breadName}</h3>
+                <p className="text-base ">
                   {description.substring(0, 50)}
                   <span
                     onClick={() => setActive(!active)}
